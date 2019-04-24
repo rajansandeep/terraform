@@ -257,10 +257,8 @@ var CompactFunc = function.New(&function.Spec{
 	},
 })
 
-// ContainsFunc contructs a function that determines whether a given list
-// contains a given single value as one of its elements.
-//
-// ContainsFunc also works on sets, as HCL automatically converts sets to lists.
+// ContainsFunc contructs a function that determines whether a given list or
+// set contains a given single value as one of its elements.
 var ContainsFunc = function.New(&function.Spec{
 	Params: []function.Parameter{
 		{
